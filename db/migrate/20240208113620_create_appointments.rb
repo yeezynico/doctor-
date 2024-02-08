@@ -4,7 +4,7 @@ class CreateAppointments < ActiveRecord::Migration[7.1]
       t.datetime :date
       t.belongs_to :doctor, index:true
       t.belongs_to :patient, index:true
-
+      t.belongs_to :city,index: true
       t.timestamps
     end
   end
